@@ -5,7 +5,7 @@
 }
 
 html {
-    padding-top: 130px;
+    padding-top: 110px;
     scroll-behavior: smooth;
 }
 
@@ -89,54 +89,8 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
-@media (max-width: 991px) {
-    .hamburger {
-        display: block;
-    }
-
-    nav {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
-        background-color: rgba(0, 64, 107, 0.95);
-        padding: 20px;
-        clip-path: circle(0% at 100% 0);
-        transition: all 0.5s ease-in-out;
-    }
-
-    nav.active {
-        clip-path: circle(150% at 100% 0);
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 6.5px);
-    }
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-    .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -6.5px);
-    }
- 
-    nav ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 0.85rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        transition: 0.3s;
-    }
-}
-
 .product-page {
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     scroll-margin-top: 100px;
 }
 
@@ -173,14 +127,14 @@ nav ul li a:hover {
 }
 
 .product-info h3 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #333;
     font-weight: 600;
     margin-bottom: 5px;
 }
 
 .product-info .specs {
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: #777;
 }
 
@@ -226,10 +180,60 @@ footer {
     .product-row {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
+        gap: 36px;
     }
 
     .product-slider-container {
         width: 100%;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background-color: rgba(0, 64, 107, 0.95);
+        padding: 20px;
+        clip-path: circle(0% at 100% 0);
+        transition: all 0.5s ease-in-out;
+    }
+
+    nav.active {
+        clip-path: circle(150% at 100% 0);
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6.5px);
+    }
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6.5px);
+    }
+ 
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: 0.3s;
     }
 }
