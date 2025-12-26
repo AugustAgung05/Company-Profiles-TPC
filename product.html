@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/assets/logo-blue.svg" type="image/svg+xml">
     <title>Products - Teak Polymer Composites</title>
     <link rel="stylesheet" href="./src/css/product.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -12,19 +13,26 @@
     <header id="main-header">
         <div class="container header-container">
             <div class="logo">
-                <img src="./src/assets/logo.png" alt="Brand Logo" class="logo-image"> 
+                <img src="./src/assets/logo.png" alt="TPC Logo" class="logo-image">
             </div>
-            <nav>
+
+            <button id="menuToggle" class="hamburger" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="nav-menu">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./index.html#about">About</a></li>
+                    <li><a href="#main-content">Products</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="product-page">
+    <section id="main-content" class="product-page">
         <div class="container">
             <h1 class="page-title">Products</h1>
 
@@ -32,7 +40,7 @@
                 <div class="product-info">
                     <img src="./src/assets/items-1.jpg" alt="Decking 7 Grooves" class="product-thumb">
                     <h3>Decking 7 Grooves</h3>
-                    <p class="specs">149 x 25 mm</p>
+                    <p class="specs">145 x 25 mm</p>
                 </div>
 
                 <div class="product-slider-container">
@@ -72,7 +80,7 @@
                 <div class="product-info">
                     <img src="./src/assets/items-3.jpg" alt="Wall Cladding" class="product-thumb">
                     <h3>Wall Cladding Fluted / Triple</h3>
-                    <p class="specs">154 x 20 mm</p>
+                    <p class="specs">164 x 30 mm</p>
                 </div>
 
                 <div class="product-slider-container">
@@ -87,9 +95,9 @@
 
             <div class="product-row">
                 <div class="product-info">
-                    <img src="./src/assets/items-4.jpg" alt="Wall Cladding" class="product-thumb">
-                    <h3>Wall Cladding Fluted / Triple</h3>
-                    <p class="specs">154 x 20 mm</p>
+                    <img src="./src/assets/items-4.jpg" alt="Rectangle Profile Hollow" class="product-thumb">
+                    <h3>Rectangle Profile Hollow</h3>
+                    <p class="specs">100 x 50 mm</p>
                 </div>
 
                 <div class="product-slider-container">
