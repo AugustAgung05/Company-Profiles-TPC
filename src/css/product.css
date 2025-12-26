@@ -190,6 +190,18 @@ footer {
     .page-title {
         font-size: 1.5rem;
     }
+
+    .product-info h3 {
+        font-size: 1.1rem;
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .product-info .specs {
+        font-size: 0.85rem;
+        color: #777;
+    }
 }
 
 @media (max-width: 991px) {
